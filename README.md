@@ -20,4 +20,4 @@ My notes from the "Advanced Database" subject at UTS. Will be evolving over time
 
 > *Durability* − The database should be durable enough to hold all its latest updates even if the system fails or restarts. If a transaction updates a chunk of data in a database and commits, then the database will hold the modified data. If a transaction commits but the system fails before the data could be written on to the disk, then that data will be updated once the system springs back into action.
 
-
+Databases have a **Transaction Management System**, which is responsible for enforcing and implementing the ACID properties - which is how they can maintain concurrency. SQLite perhaps doesn't have one? Excel definitely doesn't have one. Data warehousing requires *dilution* of the ACID properties, which is part of the point of the course.
